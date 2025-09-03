@@ -8,14 +8,12 @@ export default function About(){
        <Header currPage="about"></Header>
       </header>
       <main className="flex flex-col gap-[36px] row-start-2 justify-center items-center bg-[url('/baground.jpg')] bg-cover bg-center w-[1230px] h-[530px] py-5">
-        <a className= "hover:underline hover:underline-offset-7" 
+
+        <a className= "font-semibold hover:underline hover:underline-offset-7 hover:underline hover:underline-offset-7 hover:font-bold hover:scale-105 transition-all duration-150" 
             target="_blank"
             rel="noopener noreferrer"
-            href="/about.pdf"> Complete Company Profile
+            href="/about.pdf"> View Company Profile
         </a>
-        <div className="flex gap-[24px] justify-center">
-          <Footer></Footer>
-        </div>
       </main>
 
     </div>

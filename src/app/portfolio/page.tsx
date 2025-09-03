@@ -12,13 +12,14 @@ export default function Portfolio(){
             <main className="flex flex-col row-start-2 justify-center items-center bg-[url('/baground.jpg')] bg-cover bg-center w-[1230px] h-[530px] py-5">
                 
                 <Projects></Projects>
-                <a className= "hover:underline hover:underline-offset-7" 
+                <a className= "font-medium flex justify-center text-[#630f11] hover:underline hover:underline-offset-7 hover:font-bold hover:scale-105 transition-all duration-150" 
                 target="_blank"
                 rel="noopener noreferrer"
                 href="/ai_portfolio.pdf"> View full portfolio
                 </a>
+                
 
-                <div className="flex gap-[24px] justify-center pt-19.5">
+                <div className="flex gap-[24px] justify-center pt-13">
                     <Footer></Footer>
                 </div>
             </main>

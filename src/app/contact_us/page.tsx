@@ -10,13 +10,33 @@ export default function Portfolio(){
             <header className="h-[22px] pr-8">
                 <Header currPage="contact"></Header>
             </header>
-            <main className="flex flex-col row-start-2 justify-center items-center bg-[url('/baground.jpg')] bg-cover bg-center w-[1230px] h-[530px] py-5">
-                <div className="flex flex-col gap-y-[32px]" >
+            <main className="flex flex-col items-center bg-[url('/baground.jpg')] bg-cover bg-center w-[1230px] h-[530px] pt-28">
+                <div className="flex flex-col gap-y-[24px]" >
+                <div className="flex gap-[6px] justify-center items-center">
+                        <Image
+                            aria-hidden
+                            src="/location.svg"
+                            alt="Address 1"
+                            width={32}
+                            height={32}
+                          />
+                          TEXAS: 1901 Crossing Place. Austin, TX 78741
+                </div>
+                <div className="flex gap-[6px] justify-center items-center">
+                        <Image
+                            aria-hidden
+                            src="/location.svg"
+                            alt="Address 1"
+                            width={32}
+                            height={32}
+                          />
+                          KANSAS: 1335 N. Lewellen. Wichita, KS 67203
+                </div>
                 <div className="flex gap-[6px] justify-center items-center">
                         <Image
                             aria-hidden
                             src="/telephone.svg"
-                            alt="Globe icon"
+                            alt="Phone number"
                             width={32}
                             height={32}
                           />
@@ -26,7 +46,7 @@ export default function Portfolio(){
                     <Image
                             aria-hidden
                             src="/email_symbol.svg"
-                            alt="Globe icon"
+                            alt="Email"
                             width={32}
                             height={32}
                           />

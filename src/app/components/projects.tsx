@@ -5,7 +5,7 @@ import useEmblaCarousel from 'embla-carousel-react'
 import Autoplay from 'embla-carousel-autoplay'
 export default function Projects(){
     
-    const [emblaRef] = useEmblaCarousel({ loop: true }, [Autoplay({delay:2000})])
+    const [emblaRef] = useEmblaCarousel({ loop: true, align: 'center' }, [Autoplay({delay:2000, stopOnInteraction: false})])
     const images = [
     "/projects/1.jpg",
     "/projects/2.jpg",
@@ -28,25 +28,25 @@ export default function Projects(){
 
   return(
     <div
-  className="max-w-3xl mx-auto"
+  className="mx-auto"
   style={{
     "--slide-height": "19rem",
     "--slide-spacing": "1rem",
     "--slide-size": "70%",
   } as React.CSSProperties}
     >
-    <div className="overflow-hidden" ref={emblaRef}>
-    <div className="flex"> 
+    <div className="overflow-hidden w-[1100px]" ref={emblaRef}>
+    <div className="flex items-center h-[360px]"> 
         {images.map((path, index) => (
-            <div className="translate-z-0 flex-[0_0_var(--slide-size)] min-w-0 pl-[var(--slide-spacing)] py-8 " key={index}>
-                <Link href='/portfolio'>
+            <div className="translate-z-0 flex-[0_0_65%] min-w-0 pl-[var(--slide-spacing)] flex items-center justify-center" key={index}>
+                
                 <Image key ={index} className="block w-full object-cover" 
                 src={path} 
                 alt="Past project" 
                 width={500} 
                 height={300}>              
                 </Image>
-                </Link>              
+                             
             </div>
         ))}     
     </div>

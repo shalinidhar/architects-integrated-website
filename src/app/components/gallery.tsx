@@ -27,7 +27,7 @@ export default function Gallery(){
   } as React.CSSProperties}
     >
     <div className="overflow-hidden w-[1100px]" ref={emblaRef}>
-    <div className="flex items-center h-[400px]"> 
+    <div className="flex items-center h-[360px]"> 
         {images.map((path, index) => (
             <div className="translate-z-0 flex-[0_0_65%] min-w-0 pl-[var(--slide-spacing)] flex items-center justify-center" key={index}>
                 
