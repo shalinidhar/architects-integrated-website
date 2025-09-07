@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   title: "Architects Integrated",
   description: "Where innovation and creativity integrates with technology and efficiency to produce unique, economical & sustainiable design solutions shaping our tomorrow.",
   icons: {
-    icon: '/logo_only.ico', 
+    icon: '/favicon.ico', 
   },
 };
 
@@ -27,6 +27,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <title>Architects Integrated</title>
+        <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
